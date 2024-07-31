@@ -1,5 +1,7 @@
 # Unifi Network Server LXC container archive for unRAID
 
+WIP - Thank you ICH777!
+
 ## Prerequisites
 
 - unRAID server
@@ -22,12 +24,14 @@
 
 ## Step 1: Install Container archive
 
+Per ICH777:
 1. ~~Go to the CA App and search for PiHole~~ <- not implemented currently
 2. ~~Select the LXC template and install it~~ <- not implemented currently
+Maybe in the future???
 
-   
+**#Instructions!   **
 Currently only available by manually downloading and installing the template
-1. Open a Unraid terminal and execute `wget -O /tmp/lxc_container_template.xml https://raw.githubusercontent.com/ich777/unraid_lxc_unifi/main/lxc_container_template.xml`
+1. Open a Unraid terminal and execute `wget -O /tmp/lxc_container_template.xml WIP: http://Repository here latter.... lxc_container_template.xml`
 2. Navigate to `http://<YourunRAIDIP>/LXCAddTemplate`
 3. Make your changes if necessary
 4. Click Apply
@@ -35,3 +39,4 @@ Currently only available by manually downloading and installing the template
 
 ## Finished
 - Open up the Unifi Network Server WebUI by clicking on the container icon and select WebUI
+`http://<Your_Container_IP>:8443`
