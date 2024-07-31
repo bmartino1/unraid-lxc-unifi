@@ -1,0 +1,1 @@
+0 0 * * SUN /root/update-unifi.sh > /var/log/update-unifi.log

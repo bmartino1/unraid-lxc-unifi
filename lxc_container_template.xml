@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LXC version="0.1">
+  <Name>Unifi</Name>
+  <Distribution>debian</Distribution>
+  <Release>bookworm</Release>
+  <Architecture>amd64</Architecture>
+  <Repository>https://github.com/ich777/unraid_lxc_unifi</Repository>
+  <Description>Unifi Network Server</Description>
+  <Privileged>true</Privileged>
+  <Autostart>true</Autostart>
+  <Beta>True</Beta>
+  <Support>https://support.me.pls</Support>
+  <Source>https://ui.com/</Source>
+  <Project>https://ui.com/download</Project>
+  <Overview>This LXC container contains the Unifi Network Server</Overview>
+  <Category>Tools:</Category>
+  <WebUI>https://[IP]:8443/ </WebUI>
+  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/unifi.png</Icon>
+  <DonateText>If you like my work (or not) please </DonateText>
+  <DonateLink>https://payme.now/pls</DonateLink>
+  <Requires>unRAID server</Requires>
+</LXC>
