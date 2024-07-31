@@ -1,4 +1,5 @@
 #!/bin/bash
+#Thank you ICH777 for your contrubutions towards this:
 
 if [ ! -f /boot/config/plugins/lxc.plg ]; then
   echo "ERROR: LXC plugin not found!"
@@ -21,7 +22,9 @@ if echo ${LXC_PATH} | grep -q "/mnt/user" ; then
 fi
 
 # generate temporary LXC container name
-LXC_CONT_NAME=$(openssl rand -base64 24 | tr -dc 'a-z0-9' | cut -c -12)
+#LXC_CONT_NAME=$(openssl rand -base64 24 | tr -dc 'a-z0-9' | cut -c -12)
+#end name should be hostname unifi to assist with inform host in unifi server.
+LXC_CONT_NAME=unifi
 
 # check if build cache directory exist
 if [ ! -d ${LXC_PACKAGE_DIR} ]; then
