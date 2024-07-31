@@ -8,17 +8,15 @@
   <Description>Unifi Network Server</Description>
   <Privileged>true</Privileged>
   <Autostart>true</Autostart>
-#  <Beta>True</Beta>
-#  <Support>https://support.me.pls</Support>
+  <Beta>True</Beta>
+  <Support>https://support.me.pls</Support>
   <Source>https://ui.com/</Source>
   <Project>https://ui.com/download</Project>
   <Overview>This LXC container contains the Self-Hosted Unifi Network Server</Overview>
   <Category>Tools:</Category>
   <WebUI>https://[IP]:8443/ </WebUI>
   <Icon>https://raw.githubusercontent.com/bmartino1/unraid-lxc-unifi/main/ubiquiti.256x256.png</Icon>
- # <DonateText>If you like my work (or not) please </DonateText>
- # <DonateLink>https://payme.now/pls</DonateLink>
+  <DonateText>If you like my work (or not) please </DonateText>
+  <DonateLink>https://payme.now/pls</DonateLink>
   <Requires>unRAID server</Requires>
 </LXC>
-#to confirm and WIP...
-#I still don't see how adding this tempalte executes the sh script nor run the build scripts...
