@@ -31,7 +31,7 @@ Maybe in the future???
 
 **#Instructions!   **
 Currently only available by manually downloading and installing the template
-1. Open a Unraid terminal and execute `wget -O /tmp/lxc_container_template.xml WIP: http://Repository here latter.... lxc_container_template.xml`
+1. Open a Unraid terminal and execute `wget -O /tmp/lxc_container_template.xml https://raw.githubusercontent.com/bmartino1/unraid-lxc-unifi/main/lxc_container_template.xml`
 2. Navigate to `http://<YourunRAIDIP>/LXCAddTemplate`
 3. Make your changes if necessary
 4. Click Apply
