@@ -4,7 +4,7 @@
   <Distribution>debian</Distribution>
   <Release>bookworm</Release>
   <Architecture>amd64</Architecture>
-  <Repository>https://github.com/bmartino1/unraid_lxc_unifi</Repository>
+  <Repository>https://github.com/bmartino1/unraid-lxc-unifi</Repository>
   <Description>Unifi Network Server</Description>
   <Privileged>true</Privileged>
   <Autostart>true</Autostart>
