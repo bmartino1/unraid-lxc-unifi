@@ -25,7 +25,9 @@ you will wget the file and place in your LXC direct location for LXC backups.
 Once in the backup folder make a folder called unifi and then run command:
 
 mkdir unifi 
-wget %%% unifi_19.04.11_2024-07-30.tar
+
+https://drive.google.com/file/d/1_Ekvs9PWGh3-hRKtyGoPz3yUGAsrNcWl/view
+unifi_19.04.11_2024-07-30.tar.xz (881M)
 
 in to the backup folder
 
