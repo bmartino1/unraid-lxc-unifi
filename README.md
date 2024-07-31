@@ -39,7 +39,7 @@ Currently only available by manually downloading and installing the template
 
  
 ## License
-**THIS IS AN UNOFFICIAL ADAPTATION!** This is Not Licensed nor endorsed by Unifi, Unraid, or LXC Plug Maintainer!
+**THIS IS AN UNOFFICIAL ADAPTATION!** This is Not Licensed nor endorsed by Unifi, Unraid, or LXC Plugin Maintainer!
 Please report problems on the unraid forum: https://forums.unraid.net/topic/171566-template-lxc-unifi/
 
 You are free to edit, distribute and change the data found in here to fit your needs.
