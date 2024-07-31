@@ -4,3 +4,4 @@ wget -O /tmp/unifi.deb "https://dl.ui.com/unifi/${LAT_V}/unifi_sysvinit_all.deb"
 apt-get -y install /tmp/unifi.deb
 rm -f /tmp/unifi.deb
 systemctl stop unifi
+hostnamectl set-hostname unifi
