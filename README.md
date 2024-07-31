@@ -24,10 +24,17 @@ The run-down:
 you will wget the file and place in your LXC direct location for LXC backups.
 Once in the backup folder make a folder called unifi and then run command:
 
-mkdir unifi 
 
+cd /path to LXC Backup Folder
+mkdir unifi
+cd unifi
+wget https://github.com/bmartino1/Unraid-LXC-Unifi/releases/download/v1/unifi_19.04.11_2024-07-30.tar.xz
+
+Google Drive Mirror link
 https://drive.google.com/file/d/1_Ekvs9PWGh3-hRKtyGoPz3yUGAsrNcWl/view
-unifi_19.04.11_2024-07-30.tar.xz (881M)
+File: unifi_19.04.11_2024-07-30.tar.xz (881M)
+
+ssh/ FileZilla sftp uploaded the file to the /path to lxc backup location you chose/unifi
 
 in to the backup folder
 
