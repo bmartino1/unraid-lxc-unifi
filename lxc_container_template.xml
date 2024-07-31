@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LXC version="0.1">
-  <Name>Unifi</Name>
+  <Name>unifi</Name>
   <Distribution>debian</Distribution>
   <Release>bookworm</Release>
   <Architecture>amd64</Architecture>
