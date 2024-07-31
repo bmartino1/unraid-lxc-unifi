@@ -39,4 +39,4 @@ Currently only available by manually downloading and installing the template
 
 ## Finished
 - Open up the Unifi Network Server WebUI by clicking on the container icon and select WebUI
-`http://<Your_Container_IP>:8443`
+`https://<Your_Container_IP>:8443`
