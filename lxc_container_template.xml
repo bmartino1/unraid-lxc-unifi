@@ -9,7 +9,7 @@
   <Privileged>true</Privileged>
   <Autostart>true</Autostart>
   <Beta>True</Beta>
-  <Support>https://support.me.pls</Support>
+  <Support>https://forums.unraid.net/topic/171566-template-lxc-unifi</Support>
   <Source>https://ui.com/</Source>
   <Project>https://ui.com/download</Project>
   <Overview>This LXC container contains the Self-Hosted Unifi Network Server</Overview>
@@ -17,6 +17,6 @@
   <WebUI>https://[IP]:8443/ </WebUI>
   <Icon>https://raw.githubusercontent.com/bmartino1/unraid-lxc-unifi/main/ubiquiti.256x256.png</Icon>
   <DonateText>If you like my work (or not) please </DonateText>
-  <DonateLink>https://payme.now/pls</DonateLink>
+  <DonateLink>https://www.paypal.com/donate/?business=PA3ZHF52483KW&no_recurring=1&item_name=Tech+Support+%2F+Health+%2F+Buy+Me+a+Coffee&currency_code=USD</DonateLink>
   <Requires>unRAID server</Requires>
 </LXC>
