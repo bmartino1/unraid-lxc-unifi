@@ -5,3 +5,8 @@ echo 'deb [ arch=amd64,arm64 ] https://www.ui.com/downloads/unifi/debian stable 
 #Use both methods form https://help.ui.com/hc/en-us/articles/220066768-Updating-and-Installing-Self-Hosted-UniFi-Network-Servers-Linux
 sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
+
+#Confirm reprop
+sudo apt-get update
+#Confirm Lattest unifi
+sudo apt-get install unifi
