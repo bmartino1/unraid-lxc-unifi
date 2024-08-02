@@ -1,4 +1,4 @@
-
+#!/bin/bash
 #Use both methods from https://help.ui.com/hc/en-us/articles/220066768-Updating-and-Installing-Self-Hosted-UniFi-Network-Servers-Linux
 
 #Adding Unifi Repository to apt-source list:
