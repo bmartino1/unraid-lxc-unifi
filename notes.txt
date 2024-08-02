@@ -1,0 +1,15 @@
+Updates to watch when EOL(End of Life) Software.
+*Scripts atm are setup to grab lattest version as of 7/31/24
+
+Unifi server application: https://ui.com/download/releases/network-server
+Version: Network v 8.3.32 (Linux) as of 7/31/24
+Ongoing until Unifi decides to kill...
+
+Mongdb CE: https://www.mongodb.com/docs/manual/release-notes/7.0/
+Version: MongoDB 7.0 Stable as of 7/31/24
+EOL August 2026
+EOL Info: https://www.mongodb.com/legal/support-policy/lifecycles
+
+Debina OS Cycle: https://www.debian.org/releases/bookworm/
+Version: Debian 12.6 bookwrom as of 7/31/24
+EOL: June 30th, 2028
