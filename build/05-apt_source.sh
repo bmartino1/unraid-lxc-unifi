@@ -7,7 +7,7 @@ echo 'deb [ arch=amd64,arm64 ] https://www.ui.com/downloads/unifi/debian stable 
 #Adding apt-get update secure gpg key to use repository:
 sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg
 
-#Confirm ubquity key:
+#Confirm Ubiquiti key:
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
 
 #Confirm repro
@@ -15,3 +15,5 @@ sudo apt-get update
 
 #Confirm Lattest unifi is installed
 sudo apt-get install unifi
+
+echo "Completed addition of Ubiquiti/Unfi Offical Debain Repository, mainly added to be able to run <apt-get install unifi> for end user"
