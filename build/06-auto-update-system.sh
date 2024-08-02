@@ -13,3 +13,4 @@
 #echo "Unattended-upgrades has been installed and configured to automatically download and install stable updates."
 
 #WIP
+echo "Setup Automated security update installations"
