@@ -9,7 +9,7 @@ fi
 # get variables
 LXC_PATH=$(cat /boot/config/plugins/lxc/lxc.conf | grep "lxc.lxcpath" | cut -d '=' -f2)
 LXC_PACKAGE_NAME=unifi
-LXC_PACKAGE_DIR=${LXC_PATH}/cache/build_cache
+LXC_PACKAGE_DIR=${LXC_PATH}/cache/build_cache_unifi
 LXC_DISTRIBUTION=debian
 LXC_RELEASE=bookworm
 LXC_ARCH=amd64
