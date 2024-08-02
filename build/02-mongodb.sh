@@ -15,3 +15,4 @@ apt-get update
 apt-get -y install --no-install-recommends mongodb-org
 
 #Unifi Install will intall and grab MongDB...
+echo "Completed MongoDB Configurations and Dependencies install for MongoDB CE Version 7"
