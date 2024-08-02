@@ -1,5 +1,3 @@
-#WIP
-
 #!/bin/bash
 
 # Install unattended-upgrades
@@ -13,3 +11,5 @@
 #sudo dpkg-reconfigure --frontend=noninteractive unattended-upgrades
 
 #echo "Unattended-upgrades has been installed and configured to automatically download and install stable updates."
+
+#WIP
