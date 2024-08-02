@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Fix Permission of files in build not container a number...
+#Fix Permission of files in build folder... files that do not contain a number...
 cd /tmp/build
 chmod 755 $(ls -1 /tmp/build/ | grep -v "^[0-9][0-9]-")
 
@@ -8,4 +8,4 @@ chmod 755 $(ls -1 /tmp/build/ | grep -v "^[0-9][0-9]-")
 cp /tmp/build/update-unifi.sh /root/update-unifi.sh
 cp /tmp/build/update-system.sh /root/full-system-update.sh
 
-echo "Completed File Copy"
+echo "Completed File Copy to lxc container /root"
