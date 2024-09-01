@@ -9,4 +9,4 @@ cp /tmp/build/update-unifi.sh /root/update-unifi.sh
 cp /tmp/build/update-system.sh /root/full-system-update.sh
 
 echo "Completed scripts and Cron File Copy to lxc container in folder /root"
-echo "in the future a end user run run /root/full-system-update.sh to auto update manualy"
+echo "in the future a end user can run /root/full-system-update.sh to auto update  the debain system manualy"
