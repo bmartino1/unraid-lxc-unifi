@@ -39,8 +39,10 @@ if [ "${CUR_V}" != "${LAT_V}" ]; then
   DEBIAN_FRONTEND=noninteractive apt-get -y install /tmp/unifi.deb
 
   rm -f /tmp/unifi.deb
-  
   systemctl start unifi
+  
+echo "System check and Full system upgrade"
+apt update && apt full-upgrade -y
 
 else
   echo "Nothing to do, Unifi Network Server ${CUR_V} up-to-date!"
