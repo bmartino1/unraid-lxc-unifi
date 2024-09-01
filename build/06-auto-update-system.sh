@@ -10,7 +10,5 @@ echo "unattended-upgrades unattended-upgrades/enable_auto_updates boolean true" 
 # Reconfigure unattended-upgrades to apply the pre-configured setting
 sudo dpkg-reconfigure --frontend=noninteractive unattended-upgrades
 
-#echo "Unattended-upgrades has been installed and configured to automatically download and install stable updates."
-
-#WIP
-echo "Setup Automated security update installations"
+echo "Unattended-upgrades has been installed and configured to automatically download and install stable updates."
+#echo "Setup Automated security update installations"
