@@ -12,6 +12,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
 
 #Confirm repro
 sudo apt-get update
+sudo apt-get update --allow-releaseinfo-change
 
 #Confirm Lattest unifi is installed
 sudo apt-get install unifi
