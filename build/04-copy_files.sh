@@ -8,4 +8,5 @@ chmod 755 $(ls -1 /tmp/build/ | grep -v "^[0-9][0-9]-")
 cp /tmp/build/update-unifi.sh /root/update-unifi.sh
 cp /tmp/build/update-system.sh /root/full-system-update.sh
 
-echo "Completed File Copy to lxc container /root"
+echo "Completed scripts and Cron File Copy to lxc container in folder /root"
+echo "in the future a end user run run /root/full-system-update.sh to auto update manualy"
