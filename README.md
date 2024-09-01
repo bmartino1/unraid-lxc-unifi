@@ -2,11 +2,21 @@
 
 Thank you ICH777!
 
+## Warrning! 
+* This LXC will auto-update UniFi network application without a backup. It is recommended that after the template is made, you create an LXC snapshot and log in to your UniFi instance to make/download a backup within the UniFi Network Application.
+  
+This can be disabled by turning off the cron job:
+`crontab -e`
+and commenting out the cron that runs the update...
+
 ## Prerequisites
 
 - unRAID server
 - Properly configured and installed LXC plugin for unRAID
 - Basic understanding of command line usage
+  
+-- Unraid Forum to check on updates and known isseus...
+https://forums.unraid.net/topic/171566-template-lxc-unifi/#comment-1448473
 
 ## Container archive contents
 
