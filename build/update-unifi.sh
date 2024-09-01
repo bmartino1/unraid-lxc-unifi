@@ -3,8 +3,8 @@
 echo $(date)
 echo
 
-#allow apt repo to update for unifi
-echo "apt-get update for next unifi release"
+# Allow apt repo to update for Unifi
+echo "apt-get update for next Unifi release"
 apt-get update --allow-releaseinfo-change
 apt-get update --allow-releaseinfo-change
 
@@ -26,14 +26,22 @@ if [ "${CUR_V}" != "${LAT_V}" ]; then
     echo "Successfully downloaded Unifi Network Server!"
   else
     echo "Something went wrong while downloading Unifi Network Server!"
-    rm -f tmp/unifi.deb
+    rm -f /tmp/unifi.deb
     systemctl start unifi
     exit 1
   fi
   systemctl stop unifi
-  apt-get -y install /tmp/unifi.deb
+
+  # Pre-configure debconf to answer "Yes" to the backup prompt
+  echo "unifi unifi/has_backup boolean true" | sudo debconf-set-selections
+
+  # Install the package non-interactively
+  DEBIAN_FRONTEND=noninteractive apt-get -y install /tmp/unifi.deb
+
   rm -f /tmp/unifi.deb
+  
   systemctl start unifi
+
 else
   echo "Nothing to do, Unifi Network Server ${CUR_V} up-to-date!"
 fi
