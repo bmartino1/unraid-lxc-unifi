@@ -3,6 +3,11 @@
 echo $(date)
 echo
 
+#allow apt repo to update for unifi
+echo "apt-get update for next unifi release"
+apt-get update --allow-releaseinfo-change
+apt-get update --allow-releaseinfo-change
+
 # Get latest and current version
 LAT_V="$(wget -qO- https://dl.ui.com/unifi/debian/dists/stable/ubiquiti/binary-amd64/Packages | grep "^Version:" | awk '{print $2}' | cut -d '-' -f1)"
 CUR_V="$(/usr/lib/unifi/bin/ubnt-apttool showpkgver unifi | cut -d '-' -f1)"
