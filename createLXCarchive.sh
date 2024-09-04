@@ -1,5 +1,6 @@
 #!/bin/bash
 #Thank you ICH777 for your contrubutions towards this:
+#This script is meant to run on Unraid to build this repo for release. This will generate a LXC md5, build log and tx file that i used inteh release tags...
 
 if [ ! -f /boot/config/plugins/lxc.plg ]; then
   echo "ERROR: LXC plugin not found!"
