@@ -1,1 +1,32 @@
+echo "update unifi repo for release changes"
+apt-get update --allow-releaseinfo-change
 
+echo "Double check installing unifi"
+apt-get install unifi -y
+
+#echo "what version is installed"
+echo "Checking Univi version..."
+if systemctl is-active --quiet univi; then
+    univi_version=$(systemctl show -p ExecMainVersion univi)
+    echo "Univi version: $univi_version"
+else
+    echo "Univi service is not running."
+fi
+
+# Check mongos version
+echo "Checking mongos version..."
+if command -v mongos &>/dev/null; then
+    mongos_version=$(mongos --version)
+    echo "Mongos version: $mongos_version"
+else
+    echo "Mongos is not installed or not in the PATH."
+fi
+
+# Check Java version
+echo "Checking Java version..."
+if command -v java &>/dev/null; then
+    java_version=$(java -version 2>&1 | head -n 1)
+    echo "Java version: $java_version"
+else
+    echo "Java is not installed."
+fi
