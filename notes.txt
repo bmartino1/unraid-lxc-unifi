@@ -1,9 +1,9 @@
-As of 9/1/24
+As of 2/5/25
 Updates to watch when EOL(End of Life) Software.
 *Scripts atm are setup to grab lattest version...
 
 Unifi server application: https://ui.com/download/releases/network-server
-Version: Network v 8.4.59 (Linux)
+Version: Network v9.0.114 (Linux)
 EOL: Ongoing until Unifi decides to kill...
 
 Mongdb CE: https://www.mongodb.com/docs/manual/release-notes/7.0/
