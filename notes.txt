@@ -5,9 +5,11 @@ Updates to watch when EOL(End of Life) Software.
 Unifi server application: https://ui.com/download/releases/network-server
 Version: Network v9.0.114 (Linux)
 EOL: Ongoing until Unifi decides to kill...
+Using Java v17.0.14
 
 Mongdb CE: https://www.mongodb.com/docs/manual/release-notes/7.0/
-Version: MongoDB 7.0 Stable
+Version: v7.0.16
+*MongoDB 7.0 Stable
 EOL August 2026
 EOL Info: https://www.mongodb.com/legal/support-policy/lifecycles
 
