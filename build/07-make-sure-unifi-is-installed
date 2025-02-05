@@ -1,20 +1,24 @@
-echo "update unifi repo for release changes"
+#!/bin/bash
+
+# Update Unifi repo for release changes
+echo "Updating Unifi repo for release changes..."
 apt-get update --allow-releaseinfo-change
 
-echo "Double check installing unifi"
+# Double check installing Unifi
+echo "Ensuring Unifi is installed..."
 apt-get install unifi -y
 
-#echo "what version is installed"
+# Check Unifi version
 echo "Checking Unifi version..."
-if systemctl is-active --quiet unifi; then
-    unifi_version=$(systemctl show -p ExecMainVersion unifi)
-    echo "unifi version: $unifi_version"
+unifi_version=$(dpkg-query -W -f='${Version}' unifi)
+if [ -n "$unifi_version" ]; then
+    echo "Unifi version: $unifi_version"
 else
-    echo "Unifi service is not running."
+    echo "Unifi is not installed or not found in the package list."
 fi
 
 # Check mongos version
-echo "Checking mongos version..."
+echo "Checking Mongos version..."
 if command -v mongos &>/dev/null; then
     mongos_version=$(mongos --version)
     echo "Mongos version: $mongos_version"
