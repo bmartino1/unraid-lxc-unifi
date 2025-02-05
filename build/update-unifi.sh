@@ -10,7 +10,7 @@ apt-get update --allow-releaseinfo-change
 
 # Get latest and current version
 LAT_V="$(wget -qO- https://dl.ui.com/unifi/debian/dists/stable/ubiquiti/binary-amd64/Packages | grep "^Version:" | awk '{print $2}' | cut -d '-' -f1)"
-CUR_V="$(/usr/lib/unifi/bin/ubnt-apttool showpkgver unifi | cut -d '-' -f1)"
+CUR_V="$(dpkg-query -W -f='${Version}' unifi | cut -d '-' -f1)"
 
 # Fall back to current version if latest version is empty
 if [ -z "${LAT_V}" ]; then
@@ -40,9 +40,9 @@ if [ "${CUR_V}" != "${LAT_V}" ]; then
 
   rm -f /tmp/unifi.deb
   systemctl start unifi
-  
-echo "System check and Full system upgrade"
-apt update && apt full-upgrade -y
+
+  echo "System check and Full system upgrade"
+  apt update && apt full-upgrade -y
 
 else
   echo "Nothing to do, Unifi Network Server ${CUR_V} up-to-date!"
