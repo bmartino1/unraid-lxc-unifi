@@ -5,12 +5,12 @@ echo "Double check installing unifi"
 apt-get install unifi -y
 
 #echo "what version is installed"
-echo "Checking Univi version..."
-if systemctl is-active --quiet univi; then
-    univi_version=$(systemctl show -p ExecMainVersion univi)
-    echo "Univi version: $univi_version"
+echo "Checking Unifi version..."
+if systemctl is-active --quiet unifi; then
+    unifi_version=$(systemctl show -p ExecMainVersion unifi)
+    echo "unifi version: $unifi_version"
 else
-    echo "Univi service is not running."
+    echo "Unifi service is not running."
 fi
 
 # Check mongos version
